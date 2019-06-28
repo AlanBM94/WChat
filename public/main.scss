@@ -613,7 +613,7 @@ body {
   align-self: center;
   animation: fadeIn 0.5s;
   @include responsive(tab-port){
-    grid-template-rows: 80% auto;
+    grid-template-rows: 60% auto;
     width: 100%;
     height: 100vh;
   }
