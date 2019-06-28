@@ -860,6 +860,12 @@ h2 {
   text-align: center;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .listaInfoClima {
+    padding: 0;
+  }
+}
+
 .listaInfoClima__item {
   font-size: 1.8rem;
   color: #FDDF00;
@@ -878,6 +884,12 @@ h2 {
 
 .listaInfoClima__item:not(:last-child) {
   margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .listaInfoClima__item:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 }
 
 .pronosticoHorasLista {
