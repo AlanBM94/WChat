@@ -582,6 +582,9 @@ body {
       background: $blanco;
       width: 40rem;
       height: 80vh;
+      @include responsive(tab-port){
+        height: 100vh;
+      }
     }
     &__formularioTitulo {
       width: 100%;
