@@ -658,6 +658,9 @@ body {
     width: 80%;
     padding: 1rem;  
     text-align: center;
+    @include responsive(tab-port){
+      padding: 0;
+    }
     &__item{
       font-size: 1.8rem;
       color: $amarilloGradiente;
@@ -674,6 +677,9 @@ body {
     }
     &__item:not(:last-child){
       margin-bottom: 4rem;
+      @include responsive(tab-port){
+        margin-bottom: 1rem;
+      }
     }
   }
 
