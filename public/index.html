@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./main.css">
+  <title>WChat</title>
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="contenedor__formulario">
+      <div class="contenedor__formularioTitulo">
+        <h1>Join the Chat</h1>
+        <h2>Enter your information</h2>
+      </div>
+      <div class="contenedor__formularioContenido">
+        <form action="chat.html" class="formulario">
+          <input autocomplete="off" type="text" placeholder="Name" class="formulario__input" name="name"
+            id="inputName" />
+          <span class="mensajeInput" id="mensajeNombre"></span>
+          <input autocomplete="off" type="text" placeholder="City" class="formulario__input" name="city"
+            input="inputCity" id="inputCity" />
+          <span class="mensajeInput" id="mensajeCiudad"></span>
+          <button class="boton-login" disabled>Enter</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    // $(document).ready(function () {
+    //   setTimeout(function () {
+    //     alert("Cities must be written in English");
+    //   }, 1000);
+    // });
+  </script>
+  <script src="js/index.js" type="module"></script>
+</body>
+
+</html>

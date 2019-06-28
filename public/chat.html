@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./main.css">
+  <title>WChat</title>
+</head>
+
+<body>
+
+  <!-- Clima -->
+  <!-- <div class="clima">
+    <div class="clima__principal">
+      <div class="clima__principal__diaSeleccionado">
+        <h4 class="climaCiudadTitulo">México City</h4>
+        <div class="contenedorBotonesTemperatura">
+          <span class="temperatura">28</span>
+          <button class="btnTemperatura btnTemperatura--activo">
+            F
+          </button>
+          <button class="btnTemperatura btnTemperatura--inactivo">
+            C
+          </button>
+        </div>
+        <svg class="iconoGrande">
+          <use xlink:href="img/symbol-defs.svg#icon-cloudy"></use>
+        </svg>
+      </div>
+      <div class="clima__principal__info">
+        <ul class="listaInfoClima">
+          <li class="listaInfoClima__item">Humidity: <span>24.4</span></li>
+          <li class="listaInfoClima__item">Pressure: <span>24.4</span></li>
+          <li class="listaInfoClima__item">Temp-max: <span>24.4</span></li>
+          <li class="listaInfoClima__item">Temp-min: <span>24.4</span></li>
+        </ul>
+      </div>
+      <div class="clima__principal__pronosticoHoras">
+        <ul class="pronosticoHorasLista">
+          <li class="pronosticoHorasLista__item">
+            <p>12:00</p>
+            <svg class="iconoPequeño">
+              <use xlink:href="img/symbol-defs.svg#icon-cloudy"></use>
+            </svg>
+          </li>
+          <li class="pronosticoHorasLista__item">
+            <p>12:00</p>
+            <svg class="iconoPequeño">
+              <use xlink:href="img/symbol-defs.svg#icon-cloudy"></use>
+            </svg>
+          </li>
+          <li class="pronosticoHorasLista__item">
+            <p>12:00</p>
+            <svg class="iconoPequeño">
+              <use xlink:href="img/symbol-defs.svg#icon-cloudy"></use>
+            </svg>
+          </li>
+          <li class="pronosticoHorasLista__item">
+            <p>12:00</p>
+            <svg class="iconoPequeño">
+              <use xlink:href="img/symbol-defs.svg#icon-cloudy"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="clima__pronostico">
+      <ul class="pronosticoClima">
+        <li class="pronosticoClima__item">
+          <p class="pronosticoOtroDia">Monday</p>
+          <svg class="iconoPequeño">
+            <use xlink:href="img/symbol-defs.svg#icon-cloudy"></use>
+          </svg>
+          <div class="pronosticoClima__item__temperaturas">
+            <span class="temperaturaOtroDia">23</span>
+            <span class="temperaturaOtroDia">12</span>
+          </div>
+        </li>
+        <li class="pronosticoClima__item">
+          <p class="pronosticoOtroDia">Monday</p>
+          <svg class="iconoPequeño">
+            <use xlink:href="img/symbol-defs.svg#icon-cloudy"></use>
+          </svg>
+          <div class="pronosticoClima__item__temperaturas">
+            <span class="temperaturaOtroDia">23</span>
+            <span class="temperaturaOtroDia">12</span>
+          </div>
+        </li>
+        <li class="pronosticoClima__item">
+          <p class="pronosticoOtroDia">Monday</p>
+          <svg class="iconoPequeño">
+            <use xlink:href="img/symbol-defs.svg#icon-cloudy"></use>
+          </svg>
+          <div class="pronosticoClima__item__temperaturas">
+            <span class="temperaturaOtroDia">23</span>
+            <span class="temperaturaOtroDia">12</span>
+          </div>
+        </li>
+        <li class="pronosticoClima__item">
+          <p class="pronosticoOtroDia">Monday</p>
+          <svg class="iconoPequeño">
+            <use xlink:href="img/symbol-defs.svg#icon-cloudy"></use>
+          </svg>
+          <div class="pronosticoClima__item__temperaturas">
+            <span class="temperaturaOtroDia">23</span>
+            <span class="temperaturaOtroDia">12</span>
+          </div>
+        </li>
+        <li class="pronosticoClima__item">
+          <p class="pronosticoOtroDia">Monday</p>
+          <svg class="iconoPequeño">
+            <use xlink:href="img/symbol-defs.svg#icon-cloudy"></use>
+          </svg>
+          <div class="pronosticoClima__item__temperaturas">
+            <span class="temperaturaOtroDia">23</span>
+            <span class="temperaturaOtroDia">12</span>
+          </div>
+        </li>
+      </ul>
+
+      <a href="#" class="cerrarClima">X</a>
+    </div>
+  </div> -->
+  <div class="fondoChat">
+    <!-- Chat -->
+    <div class="chat">
+      <!-- Chat Info -->
+      <div class="chat__info">
+        <!-- Chat info personal -->
+        <div class="chat__infoPersonal">
+          <h3 class="nombreUsuario nombreUsuario--yo"></h3>
+          <span class="ciudadUsuario ciudadUsuario--yo"></span>
+          <!-- <button class="botonClima">
+            <svg class="iconoClima">
+              <use xlink:href="img/symbol-defs.svg#icon-lightning"></use>
+            </svg>
+          </button> -->
+        </div>
+        <!-- Chat info contactos -->
+        <div class="chat__infoContactos">
+          <ul class="conectados">
+            <!-- <li class="conectados__persona">
+              <h3 class="nombreUsuario nombreUsuario--2">Pablin <span
+                  class="ciudadUsuario ciudadUsuario--2">Monterrey</span></h3>
+              <button class="botonClima">
+                <svg class="iconoClima">
+                  <use xlink:href="img/symbol-defs.svg#icon-lightning"></use>
+                </svg>
+              </button>
+            </li> -->
+          </ul>
+          <!-- <div class="panel-body"></div> -->
+        </div>
+      </div>
+      <!-- Chat contenido -->
+      <div class="chat__contenido">
+        <!-- Mensaje del Admin cuando un usuario entró o dejó el chat -->
+        <!-- <p class="mensajeAdmin">Alan from Tokyo has joined the chat</p> -->
+        <!-- Mensaje que no soy yo -->
+        <!-- <div class=" chat__contenido__mensaje chat__contenido__mensajeTu">
+          <h3 class="nombreUsuario nombreUsuario--3">Pablin <span
+              class="ciudadUsuario ciudadUsuario--3">Monterrey</span></h3>
+          <p class="mensaje mensaje--tu">Hola, cómo estas?</p>
+          <span class="horaMensaje">10:15</span>
+        </div> -->
+        <!-- Mensaje que soy Yo -->
+        <!-- <div class=" chat__contenido__mensaje chat__contenido__mensajeYo">
+          <h3 class="nombreUsuario nombreUsuario--4">Alan <span class="ciudadUsuario ciudadUsuario--4">México
+              City</span></h3>
+          <p class="mensaje mensaje--yo">Muy bien y tú? </p>
+          <span class="horaMensaje horaMensaje--yo">10:17</span>
+        </div> -->
+
+      </div>
+
+      <!-- Chat teclado -->
+      <div class="chat__teclado">
+        <form action="#" class="teclado">
+          <input autocomplete="off" name="mensaje" class="teclado__mensaje" autofocus></input>
+          <button class="teclado__btnEnviar" type="submit">
+            <svg class="iconoEnviar">
+              <use xlink:href="img/symbol-defs.svg#icon-paper-plane"></use>
+            </svg>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="socket.io/socket.io.js"></script>
+  <script src="js/chatMain.js" type="module"></script>
+
+  </script>
+</body>
+
+</html>
