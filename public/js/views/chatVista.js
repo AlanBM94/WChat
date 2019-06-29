@@ -114,7 +114,7 @@ export const scrollBar = function newMsg() {
 }
 
 const decidirIcono = (tipo, tamaño) => {
-    let markup;
+    let markup = '';
     if (tamaño === "pequeño") {
         if (tipo === "Thunderstorm") {
             markup = `
@@ -246,6 +246,7 @@ export const muestraMiBotonClima = () => {
     DOMElements.contenedorInfoPersonal.append(markup);
 };
 
+
 // Muestra el clima
 export const muestraMiClima = (clima, pronosticosHoy, pronosticosDias) => {
     const markup = `
@@ -276,31 +277,29 @@ export const muestraMiClima = (clima, pronosticosHoy, pronosticosDias) => {
                 <div class="clima__principal__pronosticoHoras">
                     <ul class="pronosticoHorasLista">
                     ${pronosticosHoy.map(pronostico => {
-        let markup = "";
-        markup += `
-                            <li class="pronosticoHorasLista__item">
-                                <p>${formatoHora(pronostico.dt_txt.split(" ")[1])}</p>
-                                ${decidirIcono(pronostico.weather[0].main, "pequeño")}
-                            </li>
-                            `;
+        let markup = '';
+        markup = `<li class="pronosticoHorasLista__item">
+                    <p>${formatoHora(pronostico.dt_txt.split(" ")[1])}</p>
+                    ${decidirIcono(pronostico.weather[0].main, "pequeño")}
+                </li>`;
         return markup;
-    })}
+    }).join('')}
                     </ul>
                 </div>
                 </div>
                 <div class="clima__pronostico">
                     <ul class="pronosticoClima">
                         ${pronosticosDias.map(pronosticoDia => {
-        let markup = "";
-        markup += `<li class="pronosticoClima__item">
-                        <p class="pronosticoOtroDia">${pronosticoDia.dt_txt.split(" ")[0]} 12:00</p>
-                        ${decidirIcono(pronosticoDia.weather[0].main, "pequeño")}
-                        <div class="pronosticoClima__item__temperaturas">
-                            <span class="temperaturaOtroDia temperaturaOtroDiaMax">${Math.round(pronosticoDia.main.temp_max)}</span>
-                        </div>
-                    </li>`;
+        let markup = '';
+        markup = `<li class="pronosticoClima__item">
+                    <p class="pronosticoOtroDia">${pronosticoDia.dt_txt.split(" ")[0]} 12:00</p>
+                    ${decidirIcono(pronosticoDia.weather[0].main, "pequeño")}
+                    <div class="pronosticoClima__item__temperaturas">
+                        <span class="temperaturaOtroDia temperaturaOtroDiaMax">${Math.round(pronosticoDia.main.temp_max)}</span>
+                    </div>
+                </li>`;
         return markup;
-    })}
+    }).join('')};
                     </ul>
                     <a href="#" class="cerrarClima">X</a>
                 </div>
@@ -339,22 +338,20 @@ export const muestraTuClima = (clima, pronosticosHoy, pronosticosDias) => {
                 <div class="clima__principal__pronosticoHoras">
                     <ul class="pronosticoHorasLista">
                     ${pronosticosHoy.map(pronostico => {
-        let markup = "";
-        markup += `
-                            <li class="pronosticoHorasLista__item">
-                                <p>${formatoHora(pronostico.dt_txt.split(" ")[1])}</p>
-                                ${decidirIcono(pronostico.weather[0].main, "pequeño")}
-                            </li>
-                            `;
+        let markup = '';
+        markup += `<li class="pronosticoHorasLista__item">
+                        <p>${formatoHora(pronostico.dt_txt.split(" ")[1])}</p>
+                        ${decidirIcono(pronostico.weather[0].main, "pequeño")}
+                    </li>`;
         return markup;
-    })}
+    }).join('')}
                     </ul>
                 </div>
                 </div>
                 <div class="clima__pronostico">
                     <ul class="pronosticoClima">
                         ${pronosticosDias.map(pronosticoDia => {
-        let markup = "";
+        let markup = '';
         markup += `<li class="pronosticoClima__item">
                         <p class="pronosticoOtroDia">${pronosticoDia.dt_txt.split(" ")[0]} 12:00</p>
                         ${decidirIcono(pronosticoDia.weather[0].main, "pequeño")}
@@ -363,7 +360,7 @@ export const muestraTuClima = (clima, pronosticosHoy, pronosticosDias) => {
                         </div>
                     </li>`;
         return markup;
-    })}
+    }).join('')}
                     </ul>
                     <a href="#" class="cerrarClima">X</a>
                 </div>
