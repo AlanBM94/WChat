@@ -721,9 +721,10 @@ h2 {
   height: 80vh;
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 37.5em) {
   .contenedor__formulario {
     height: 100vh;
+    width: 100%;
   }
 }
 

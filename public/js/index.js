@@ -2,7 +2,7 @@ import { DOMElements } from "./base.js";
 import Coordenadas from "./models/login.js";
 import * as vistaLogin from "./views/loginVista.js";
 
-$(document).ready(function () {
+$(document).ready(function() {
   // estadoLogin de la aplicación
   let estadoLogin = {};
 
@@ -21,7 +21,6 @@ $(document).ready(function () {
     // Habilita el boton de enter
     // console.log(estadoLogin.validacion1);
     vistaLogin.habilitarBoton(estadoLogin.validacion1, estadoLogin.validacion2);
-
   };
 
   // Controlador del inputCiudad
@@ -34,7 +33,7 @@ $(document).ready(function () {
     let infoCiudad;
     let validarCiudad;
     // Si la ciudad es diferente a un string vacío busca las coordenadas de la ciudad
-    if (ciudad !== '') {
+    if (ciudad !== "") {
       infoCiudad = await estadoLogin.ciudad.buscaCoordenadas();
       if (infoCiudad) {
         // Valida que la ciudad ingresada solo tenga letras
@@ -48,7 +47,6 @@ $(document).ready(function () {
     vistaLogin.habilitarBoton(estadoLogin.validacion1, estadoLogin.validacion2);
   };
 
-
   // Eventos que se disparan cuando se hace blur en el inpuNombre
   DOMElements.inputName.on("blur", () => {
     controladorInputNombre();
@@ -58,12 +56,4 @@ $(document).ready(function () {
   DOMElements.inputCity.on("blur", () => {
     controladorInputCiudad();
   });
-
-
-
-
-
-
-
 });
-
